@@ -15,6 +15,10 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
 app.use((req, res) => {
     res.status(404).send('404 - Page Not Found');
 });
