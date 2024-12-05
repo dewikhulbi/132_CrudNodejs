@@ -6,7 +6,7 @@ const app = express();
 
 // Load environment variables from .env
 require('dotenv').config();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3095;
 
 const session = require('express-session');
 const authRoutes = require('./routes/authRoutes');
