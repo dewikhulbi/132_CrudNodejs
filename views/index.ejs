@@ -4,15 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Petshop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Styling Navbar */
+        .navbar {
+            background: #457b9d; /* Soft blue */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #afd924 !important; /* Soft white */
+        }
+
+        .navbar-nav .nav-link {
+            color: #b2cea8 !important; /* Soft white */
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #a8dadc !important; /* Soft teal */
+        }
+
+        /* Background halaman */
+        body {
+            background: #f1faee; /* Soft cream */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Styling Card */
+        .card {
+            border: none;
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            color: #1d3557; /* Dark blue */
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background: #a8dadc; /* Soft teal */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #457b9d; /* Soft blue */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #457b9d; /* Soft blue */
+            color: #f1faee; /* Soft white */
+            font-weight: bold;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to the Home Page!</h1>
-        <p>This is the home page of our application.</p>
-        <a href="/contact" class="btn btn-primary">Go to Contact Page</a>
+    <!-- Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to Petshop!</h1>
+        <p class="text-center">Find everything your pets need, from food to toys, with the best quality!</p>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/64/0c/1d/640c1dd9c86962f845c9ef03d88dcfc5.jpg" class="card-img-top" alt="Pet Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Pet Food</h5>
+                        <p class="card-text">High-quality food to keep your pets healthy and happy.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6c/3f/10/6c3f1023c5f7ba96d23450722a439874.jpg" class="card-img-top" alt="Pet Toys">
+                    <div class="card-body">
+                        <h5 class="card-title">Fun Pet Toys</h5>
+                        <p class="card-text">Durable and safe toys for endless fun.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/be/4d/74/be4d7407fcf2fa7c489ebfb8fa9648f2.jpg" class="card-img-top" alt="Pet Accessories">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Accessories</h5>
+                        <p class="card-text">Stylish and functional accessories for your pets.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © Copyright 2024 Dewi
     </div>
 </body>
 
