@@ -1,5 +1,5 @@
 const express = require('express');
-const todoRoutes = require('./routes/todo.js');
+const todoRoutes = require('./routes/tododb.js');
 const expressLayout = require('express-ejs-layouts');
 const db = require('./database/db.js');
 const app = express();
